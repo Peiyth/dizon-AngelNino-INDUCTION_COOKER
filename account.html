@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | INDUCTION COOKER</title>
+
+    <link rel="stylesheet" href="account.css">
+    <script src="account.js" defer></script>
+</head>
+<body>
+
+    <header class="account-header">
+        <a href="index.html" class="logo">INDUCTION COOKER<span>.</span></a>
+        <a href="index.html" class="back-link">Back to Website</a>
+    </header>
+
+    <main class="account-container">
+
+        <div class="account-card">
+
+            <div class="account-heading">
+                <span class="section-label">WELCOME TO INDUCTION COOKER</span>
+                <h1>Your Account</h1>
+                <p>Sign in or create an account to get started.</p>
+            </div>
+
+            <!-- LOGIN / REGISTER TABS -->
+            <div class="account-tabs" id="accountTabs">
+                <button class="tab active" id="loginTab">Login</button>
+                <button class="tab" id="registerTab">Register</button>
+            </div>
+
+            <p class="form-message" id="formMessage"></p>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Login
+                </button>
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <a href="#" id="showRegister">Register</a>
+                </p>
+
+            </form>
+
+            <!-- REGISTER FORM -->
+            <form id="registerForm" hidden>
+
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your full name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="At least 8 characters"
+                        minlength="8"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Create Account
+                </button>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <a href="#" id="showLogin">Login</a>
+                </p>
+
+            </form>
+
+            <!-- LOGGED-IN VIEW -->
+            <div id="profileView" hidden>
+                <div class="profile-icon">👤</div>
+                <h2 id="profileName">Welcome!</h2>
+                <p id="profileEmail"></p>
+
+                <button type="button" class="submit-btn" id="logoutBtn">
+                    Logout
+                </button>
+            </div>
+
+            <p class="demo-note">
+                INDUCTION COOKER Account Demo
+            </p>
+
+        </div>
+
+    </main>
+
+    <footer class="account-footer">
+        <p>© 2026 INDUCTION COOKER. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
